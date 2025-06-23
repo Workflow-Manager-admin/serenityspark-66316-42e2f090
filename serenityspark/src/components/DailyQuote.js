@@ -1,6 +1,7 @@
+// DailyQuote: shows daily quote and theme controls, and now renders VoiceNarration below the quote.
 import React, { useEffect, useState, useRef } from "react";
 import { quotesDataset, quoteThemes, getQuotesByTheme } from "../utils/quotes";
-
+import VoiceNarration from "./VoiceNarration";
 // PUBLIC_INTERFACE
 /**
  * DailyQuote Component
@@ -58,12 +59,13 @@ function DailyQuote() {
         background: "var(--secondary)",
         borderRadius: "var(--border-radius)",
         boxShadow: "0 1px 16px var(--shadow-color)",
-        padding: "32px 20px 22px 20px",
+        padding: "30px 20px 18px 20px",
         margin: "0 auto 1.5rem auto",
         maxWidth: 440,
         transition: "background var(--transition), box-shadow var(--transition)"
       }}
     >
+      {/* Quote text + author */}
       <div
         className={`quote-fade${fade ? " visible" : ""}`}
         aria-live="polite"
@@ -80,7 +82,8 @@ function DailyQuote() {
             color: "var(--text-color)",
             lineHeight: 1.45,
             marginBottom: 13,
-            minHeight: 52
+            minHeight: 52,
+            textAlign: "center",
           }}
         >
           “{currentQuote.text}”
@@ -91,18 +94,23 @@ function DailyQuote() {
             fontSize: "1.01rem",
             color: "var(--muted-text)",
             fontWeight: 500,
-            marginBottom: 10
+            marginBottom: 10,
+            textAlign: "center",
           }}
         >
           — {currentQuote.author}
         </div>
+      </div>
+      {/* Voice Narration option: minimalist, gentle gap below quote, visually subtle */}
+      <div style={{ margin: "0 0 7px 0" }}>
+        <VoiceNarration quote={currentQuote.text} />
       </div>
       <div
         style={{
           display: "flex",
           alignItems: "center",
           gap: 16,
-          marginTop: 26,
+          marginTop: 18,
           justifyContent: "space-between"
         }}
       >
