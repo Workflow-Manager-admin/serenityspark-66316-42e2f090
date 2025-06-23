@@ -7,14 +7,14 @@
 <i> [webpack-dev-server] On Your Network (IPv4): http://172.17.0.2:3000/
 <i> [webpack-dev-server] Content not from webpack is served from './public' directory
 Injecting EditorRootWrapper import: ../.ve/EditorRootWrapper
-asset bundle.js 1.41 MiB [emitted] (name: main)
+asset bundle.js 1.43 MiB [emitted] (name: main)
 asset index.html 1.98 KiB [emitted]
 runtime modules 27.5 KiB 14 modules
 modules by path ./node_modules/ 1.24 MiB 31 modules
-modules by path ./src/ 27.3 KiB
+modules by path ./src/ 40.2 KiB
   modules by path ./src/*.css 9.23 KiB 4 modules
+  modules by path ./src/components/*.js 24 KiB 3 modules
   modules by path ./src/*.js 4.85 KiB 2 modules
-  modules by path ./src/components/*.js 11.1 KiB 2 modules
   ./src/utils/quotes.js 2.05 KiB [built] [code generated]
 modules by path ./.ve/ 15.1 KiB
   modules by path ./.ve/*.js 10.6 KiB 2 modules
@@ -22,26 +22,14 @@ modules by path ./.ve/ 15.1 KiB
     ./.ve/EditorOverlay.css 2.25 KiB [built] [code generated]
     ./node_modules/css-loader/dist/cjs.js!./.ve/EditorOverlay.css 697 bytes [built] [code generated]
   ./.ve/EditorOverlay.jsx 1.58 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 1203 ms
-assets by status 1.98 KiB [cached] 1 asset
-assets by path *.js 1.45 MiB
-  asset bundle.js 1.43 MiB [emitted] (name: main)
-  asset main.641de87a1cff9f682a0d.hot-update.js 23.5 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.641de87a1cff9f682a0d.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.45 MiB = bundle.js 1.43 MiB main.641de87a1cff9f682a0d.hot-update.js 23.5 KiB
-cached modules 1.28 MiB [cached] 44 modules
-runtime modules 27.5 KiB 14 modules
-javascript modules 17.3 KiB
-  ./src/components/DailyQuote.js 4.86 KiB [built] [code generated]
-  ./src/components/VoiceNarration.js 12.4 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 87 ms
+webpack 5.99.9 compiled successfully in 1360 ms
 assets by status 1.98 KiB [cached] 1 asset
 assets by path *.js 1.44 MiB
   asset bundle.js 1.43 MiB [emitted] (name: main)
-  asset main.5dbeddb78aa45c08d70e.hot-update.js 8.45 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.5dbeddb78aa45c08d70e.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.44 MiB = bundle.js 1.43 MiB main.5dbeddb78aa45c08d70e.hot-update.js 8.45 KiB
+  asset main.c9ec2a674c02d714b6c5.hot-update.js 8.67 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.c9ec2a674c02d714b6c5.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.44 MiB = bundle.js 1.43 MiB main.c9ec2a674c02d714b6c5.hot-update.js 8.67 KiB
 cached modules 1.29 MiB [cached] 45 modules
 runtime modules 27.5 KiB 14 modules
-./src/components/DailyQuote.js 5.22 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 45 ms
+./src/components/DailyQuote.js 5.42 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 90 ms

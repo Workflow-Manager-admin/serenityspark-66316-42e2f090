@@ -100,10 +100,20 @@ function DailyQuote() {
         >
           — {currentQuote.author}
         </div>
-      </div>
-      {/* Voice Narration option: minimalist, gentle gap below quote, visually subtle */}
-      <div style={{ margin: "0 0 7px 0" }}>
-        <VoiceNarration quote={currentQuote.text} />
+        {/* Voice Narration: calm, cohesive, minimalist. Accessible, gently spaced below quote */}
+        <div
+          style={{
+            margin: "16px auto 0 auto",
+            padding: 0,
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            transition: "margin 0.3s"
+          }}
+        >
+          <VoiceNarration quote={currentQuote.text} />
+        </div>
       </div>
       <div
         style={{
