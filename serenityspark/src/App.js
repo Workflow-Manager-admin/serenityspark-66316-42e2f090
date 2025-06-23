@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import DailyQuote from './components/DailyQuote';
 
 // PUBLIC_INTERFACE
 function App() {
@@ -26,6 +27,8 @@ function App() {
               Begin Your Journey
             </button>
           </section>
+          {/* DailyQuote follows the hero section, matching the calming theme */}
+          <DailyQuote />
           {/* More sections/components injected here as the app grows */}
         </div>
       </main>
