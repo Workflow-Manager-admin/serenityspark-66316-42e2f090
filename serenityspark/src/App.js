@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import DailyQuote from './components/DailyQuote';
+import Challenge from './components/Challenge';
 
 // PUBLIC_INTERFACE
 function App() {
+  const [challengeComplete, setChallengeComplete] = useState(false);
+
   return (
     <div className="app">
       <nav className="navbar" role="navigation">
@@ -27,8 +30,13 @@ function App() {
               Begin Your Journey
             </button>
           </section>
-          {/* DailyQuote follows the hero section, matching the calming theme */}
-          <DailyQuote />
+          {/* Challenge comes before quote. DailyQuote is unlocked only after solving the challenge */}
+          {!challengeComplete && (
+            <Challenge onComplete={() => setChallengeComplete(true)} />
+          )}
+          {challengeComplete && (
+            <DailyQuote />
+          )}
           {/* More sections/components injected here as the app grows */}
         </div>
       </main>
